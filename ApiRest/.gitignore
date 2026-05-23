@@ -54,3 +54,6 @@ build/
 *.zip
 *.tar.gz
 *.rar
+
+#Private
+.env
