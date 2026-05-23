@@ -13,6 +13,7 @@ public class User {
     //User attributes
     @Id //Indicates that this field is the primary key of the entity
     @GeneratedValue(strategy = GenerationType.IDENTITY) //Specifies that the primary key will be generated automatically by the database
+    @Column(name = "id") //Specifies the name of the column in the database and that it cannot be null
     private int id;
     @Column(name = "name", nullable = false) //Specifies the name of the column in the database and that it cannot be null
     private String name;
