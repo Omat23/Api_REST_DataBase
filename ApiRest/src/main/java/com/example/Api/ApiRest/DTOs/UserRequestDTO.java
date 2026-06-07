@@ -19,7 +19,7 @@ public class UserRequestDTO {
 
     @Min(value = 18, message = "Age must be at least 18")
     @Positive(message = "Age must be a positive number")
-    private String age;
+    private int age;
 
     @NotBlank(message = "Email is required")
     @Email(message = "Email should be valid")
