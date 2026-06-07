@@ -3,6 +3,7 @@ package com.example.Api.ApiRest.Controller;
 import com.example.Api.ApiRest.DTOs.UserRequestDTO;
 import com.example.Api.ApiRest.DTOs.UserResponseDTO;
 import com.example.Api.ApiRest.Service.UserService;
+import jakarta.validation.Valid;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -21,6 +22,7 @@ public class UserController {
     @PostMapping("/add")
     public ResponseEntity<UserResponseDTO> addUser(
             @RequestBody
+            @Valid
             UserRequestDTO userRequestDTO
             ){
 
