@@ -2,12 +2,13 @@ package com.example.Api.ApiRest.DTOs;
 
 import jakarta.validation.constraints.*;
 import lombok.AllArgsConstructor;
+import lombok.Data;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 @AllArgsConstructor
 @NoArgsConstructor
-@Getter
+@Data
 public class UserRequestDTO {
 
     @NotBlank(message = "Name is required")

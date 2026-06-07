@@ -1,12 +1,13 @@
 package com.example.Api.ApiRest.Models;
 
 import jakarta.persistence.*;
+import lombok.Data;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 @Entity //Indicates that this class is an entity and will be mapped to a database table
 @Table(name = "users") //Specifies the name of the database table to be used for mapping
-@Getter //Create the getters of the model
+@Data //Create the getters and setters of the model
 @NoArgsConstructor //Create an empty constructor
 public class User {
 
