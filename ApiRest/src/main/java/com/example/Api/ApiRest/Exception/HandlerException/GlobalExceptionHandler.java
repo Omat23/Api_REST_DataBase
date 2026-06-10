@@ -22,7 +22,6 @@ public class GlobalExceptionHandler {
         });
         return new ResponseEntity<>(new ResponseException<>(
                 "Invalid input parameters",
-                validException.getMessage(),
                 errors,
                 HttpStatus.BAD_REQUEST.value(),
                 LocalDateTime.now()
